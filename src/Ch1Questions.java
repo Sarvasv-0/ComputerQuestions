@@ -34,6 +34,8 @@ public class Ch1Questions {
 
 //        Question 3
 //        Write a program to swap values of two variables without creating third variable
+/*
+
         System.out.print("Enter first number: ");
         int num1 = sc.nextInt();
         System.out.print("Enter second number: ");
@@ -43,5 +45,29 @@ public class Ch1Questions {
         num2 = num1 - num2;
         num1 = num1 - num2;
         System.out.println("first number: "+num1+" and second number: "+num2);
+*/
+
+//        Question 4
+//        Write a function in Java that accepts length, height and width of a cuboid and returns the surface area and volume
+        System.out.print("Enter the Length of Cuboid: ");
+        int x = sc.nextInt();
+        System.out.print("Enter the Height of Cuboid: ");
+        int y = sc.nextInt();
+        System.out.print("Enter the Width of Cuboid: ");
+        int z = sc.nextInt();
+//        for surface area
+        System.out.println("The surface area of the cuboid is: "+q4_SurfaceArea(x,y,z));
+//        for volume
+        System.out.println("The volume of the cuboid is: "+q4_Volume(x,y,z));
+    }
+    public static int q4_SurfaceArea(int l, int h, int w){
+//        Calculating surface area
+//        S = 2(ab+ac+bc)
+        return 2*l*h + 2*h*w + 2*l*w;
+    }
+    public static int q4_Volume(int l, int h, int w){
+//        Calculating Volume
+//        V = a*b*c
+        return l*h*w;
     }
 }
