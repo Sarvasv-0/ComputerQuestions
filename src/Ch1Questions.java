@@ -5,7 +5,7 @@ public class Ch1Questions {
         Scanner sc = new Scanner(System.in);
 
 //        Question 1
-//        Write a program to check if a number input by the user is vowel or consonant
+//        Write a program to check if a number input by the user is even or odd
 
 /*
         System.out.print("Enter a number: ");
