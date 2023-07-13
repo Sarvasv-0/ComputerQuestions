@@ -64,6 +64,7 @@ public class Ch1Questions {
 
 //        Question 5
 //        Write a program that take principal amount, interest rate and duration from user and print the simple interest
+/*
 
         int principal,rate,time;
         System.out.print("Enter the principal amount: "); principal = sc.nextInt();
@@ -72,6 +73,62 @@ public class Ch1Questions {
 
         System.out.println("The Simple Interest is: " + (principal*rate*time/100));
 
+*/
+
+//        Question 6
+//        Write a program that takes total marks and obtained marks of a student and print the grade A++, A+, A, B+, B, C, D according to the following slab
+//        A++ > 90
+//        A+ > 75
+//        A > 60
+//        B+ > 50
+//        B > 45
+//        C > 35
+//        D < 35
+
+/*
+        int totalMarks = sc.nextInt();
+        float obtainedMarks = sc.nextInt();
+        float percentage = (obtainedMarks/totalMarks)*100.0f;
+        if (percentage>=90){
+            System.out.println("Your grade is A++");
+        } else if (percentage<90 && percentage>=75) {
+            System.out.println("Your grade is A+");
+        } else if (percentage<75 && percentage>=60) {
+            System.out.println("Your grade is A");            
+        } else if (percentage<60 && percentage>=50) {
+            System.out.println("Your grade is B+");
+        } else if (percentage<50 && percentage>=45) {
+            System.out.println("Your grade is B");
+        } else if (percentage<45 && percentage>=35) {
+            System.out.println("Your grade is C");
+        } else if (percentage<35) {
+            System.out.println("Your grade is D");
+        }else {
+            System.out.println("Percentage invalid!");
+        }
+*/
+
+//        Question 7
+//        Write a calculator program that takes as input two numbers and one operator to perform mathematical operation and prints the calculated result
+        float x,y;
+        x = sc.nextFloat();
+        y = sc.nextFloat();
+        char op = sc.next().charAt(0);
+        if (op=='+'){
+            System.out.println(x+y);
+        }
+        else if (op=='-'){
+            System.out.println(x-y);
+        }
+        else if (op=='*'){
+            System.out.println(x*y);
+        }
+        else if (op=='/'){
+            System.out.println(x/y);
+        }
+        else {
+            System.out.println("Invalid Input!");
+        }
 
     }
     public static int q4_SurfaceArea(int l, int h, int w){
