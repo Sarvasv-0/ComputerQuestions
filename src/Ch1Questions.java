@@ -49,6 +49,7 @@ public class Ch1Questions {
 
 //        Question 4
 //        Write a function in Java that accepts length, height and width of a cuboid and returns the surface area and volume
+/*
         System.out.print("Enter the Length of Cuboid: ");
         int x = sc.nextInt();
         System.out.print("Enter the Height of Cuboid: ");
@@ -59,6 +60,19 @@ public class Ch1Questions {
         System.out.println("The surface area of the cuboid is: "+q4_SurfaceArea(x,y,z));
 //        for volume
         System.out.println("The volume of the cuboid is: "+q4_Volume(x,y,z));
+*/
+
+//        Question 5
+//        Write a program that take principal amount, interest rate and duration from user and print the simple interest
+
+        int principal,rate,time;
+        System.out.print("Enter the principal amount: "); principal = sc.nextInt();
+        System.out.print("Enter the interest rate: "); rate = sc.nextInt();
+        System.out.print("Enter the time (in years): "); time = sc.nextInt();
+
+        System.out.println("The Simple Interest is: " + (principal*rate*time/100));
+
+
     }
     public static int q4_SurfaceArea(int l, int h, int w){
 //        Calculating surface area
