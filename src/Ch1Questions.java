@@ -137,6 +137,7 @@ public class Ch1Questions {
 //        Question 8
 //        Write a program in Java to display fibonacci series up to 10 numbers
 
+/*
         int a=0,b=1,c,term;
         System.out.print("Enter a term for fibonacci series: ");
         term = sc.nextInt();
@@ -145,6 +146,24 @@ public class Ch1Questions {
             c=a+b;
             a=b;
             b=c;
+        }
+*/
+
+//        Question 9
+//        Write a program to check if the given number is a palindrome number
+
+        System.out.print("Enter a number: ");
+        int num = sc.nextInt();
+        int reverse=0;
+
+        for (;num != 0; num/=10){
+            reverse=reverse*10 + num%10;
+        }
+
+         if (num == reverse) {
+            System.out.println("The number you entered is a palindrome number.");
+        } else {
+            System.out.println("The number you entered is not a palindrome number.");
         }
 
     }
