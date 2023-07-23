@@ -110,10 +110,12 @@ public class Ch1Questions {
 
 //        Question 7
 //        Write a calculator program that takes as input two numbers and one operator to perform mathematical operation and prints the calculated result
+
+/*
         float x,y;
-        x = sc.nextFloat();
-        y = sc.nextFloat();
-        char op = sc.next().charAt(0);
+        System.out.print("Enter the first number: ");x = sc.nextFloat();
+        System.out.print("Enter the second number: ");y = sc.nextFloat();
+        System.out.print("Enter the operator (+,-,*,/) : ");char op = sc.next().charAt(0);
         if (op=='+'){
             System.out.println(x+y);
         }
@@ -125,9 +127,24 @@ public class Ch1Questions {
         }
         else if (op=='/'){
             System.out.println(x/y);
-        }
-        else {
+        } else if (op=='%') {
+            System.out.println(x%y);
+        } else {
             System.out.println("Invalid Input!");
+        }
+*/
+
+//        Question 8
+//        Write a program in Java to display fibonacci series up to 10 numbers
+
+        int a=0,b=1,c,term;
+        System.out.print("Enter a term for fibonacci series: ");
+        term = sc.nextInt();
+        for (int i = 0; i < term; i++) {
+            System.out.println(a);
+            c=a+b;
+            a=b;
+            b=c;
         }
 
     }
