@@ -191,6 +191,7 @@ public class Ch1Questions {
 //        Question 11
 //        Write a method which accepts three numbers and returns the average
 
+/*
         System.out.print("Enter the first number: ");
         int num1 = sc.nextInt();
         System.out.print("Enter the second number: ");
@@ -199,6 +200,24 @@ public class Ch1Questions {
         int num3 = sc.nextInt();
 
         System.out.println("The Average is: "+average(num1,num2,num3));
+*/
+
+//        Question 12
+//        Write a program to produce the following output
+//        *
+//        **
+//        ***
+//        ****
+//        *****
+
+/*
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j <= i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+*/
 
     }
     public static int q4_SurfaceArea(int l, int h, int w){
