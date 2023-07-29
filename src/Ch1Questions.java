@@ -170,6 +170,8 @@ public class Ch1Questions {
 
 //        Question 10
 //        Write a program to check if the given number is an armstrong number.
+
+/*
         int num,rem,og,temp=0;
         System.out.print("Enter a number: ");
         num = sc.nextInt();
@@ -184,7 +186,20 @@ public class Ch1Questions {
         }
         else {
             System.out.println("The Number you entered is not an Armstrong Number");
-        }
+        }*/
+
+//        Question 11
+//        Write a method which accepts three numbers and returns the average
+
+        System.out.print("Enter the first number: ");
+        int num1 = sc.nextInt();
+        System.out.print("Enter the second number: ");
+        int num2 = sc.nextInt();
+        System.out.print("Enter the third number: ");
+        int num3 = sc.nextInt();
+
+        System.out.println("The Average is: "+average(num1,num2,num3));
+
     }
     public static int q4_SurfaceArea(int l, int h, int w){
 //        Calculating surface area
@@ -195,5 +210,8 @@ public class Ch1Questions {
 //        Calculating Volume
 //        V = a*b*c
         return l*h*w;
+    }
+    public static int average(int x,int y,int z){
+        return (x+y+z)/3;
     }
 }
