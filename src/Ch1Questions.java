@@ -152,6 +152,7 @@ public class Ch1Questions {
 //        Question 9
 //        Write a program to check if the given number is a palindrome number
 
+/*
         System.out.print("Enter a number: ");
         int num = sc.nextInt();
         int reverse=0;
@@ -165,7 +166,25 @@ public class Ch1Questions {
         } else {
             System.out.println("The number you entered is not a palindrome number.");
         }
+*/
 
+//        Question 10
+//        Write a program to check if the given number is an armstrong number.
+        int num,rem,og,temp=0;
+        System.out.print("Enter a number: ");
+        num = sc.nextInt();
+        og=num;
+        while(num>0){
+            rem=num%10;
+            temp= (int) (Math.pow(rem,3)+temp);
+            num/=10;
+        }
+        if (og==temp){
+            System.out.println("The Number you entered is an Armstrong Number");
+        }
+        else {
+            System.out.println("The Number you entered is not an Armstrong Number");
+        }
     }
     public static int q4_SurfaceArea(int l, int h, int w){
 //        Calculating surface area
