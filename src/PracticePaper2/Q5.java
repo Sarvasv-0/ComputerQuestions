@@ -36,6 +36,7 @@ class Student {
     }
 
     void display(){
+        System.out.println();
         System.out.println("Your name is: "+name);
         System.out.println("Your age is: "+age);
         System.out.printf("The marks you got in first subject: %f%n",m1);
