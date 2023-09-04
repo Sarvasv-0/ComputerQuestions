@@ -9,6 +9,9 @@ public class Q4 {
         codeName.pan=12345678;
         codeName.name="01010111 01101111 01110111 00100000 01111001 01101111 01110101 00100000 01100110 01101111 01110101 01101110 01100100 00100000 01101001 01110100 00100001";
         codeName.taxIncome=60000;
+        codeName.input();
+        codeName.calc();
+        codeName.display();
     }
 }
 
