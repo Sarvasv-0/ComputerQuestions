@@ -22,10 +22,10 @@ class Employee {
     double taxIncome;
     double tax;
     void input() {
-        System.out.print("Enter your PAN number: ");
-        pan = sc.nextInt();
         System.out.print("Enter your Name: ");
         name = sc.nextLine();
+        System.out.print("Enter your PAN number: ");
+        pan = sc.nextInt();
         System.out.print("Enter your Taxable Income: ");
         taxIncome = sc.nextDouble();
     }
@@ -41,6 +41,7 @@ class Employee {
         }
     }
     void display() {
+        System.out.println();
         System.out.printf("Your Name is: %s\n", name);
         System.out.printf("Your PAN Number is: %d \n", pan);
         System.out.printf("Your Tax is: %f\n", tax);
