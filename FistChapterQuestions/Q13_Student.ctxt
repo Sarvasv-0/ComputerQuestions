@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Q13_Student
+comment1.params=
+comment1.target=java.lang.String\ getName()
+comment2.params=x
+comment2.target=void\ setName(java.lang.String)
+comment3.params=
+comment3.target=float\ getTestMarks()
+comment4.params=x
+comment4.target=void\ setTestMarks(float)
+comment5.params=
+comment5.target=char\ getGrade()
+comment6.params=x
+comment6.target=void\ setGrade(char)
+numComments=7
